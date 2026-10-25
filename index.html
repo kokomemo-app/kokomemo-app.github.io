@@ -1,76 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ここメモ - サポート</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-            line-height: 1.8;
-            color: #333;
-            background: #f8f9fa;
-        }
-        .header {
-            background: linear-gradient(135deg, #0d61f2, #3a8bff);
-            color: white;
-            text-align: center;
-            padding: 60px 20px 40px;
-        }
-        .header h1 { font-size: 2em; margin-bottom: 8px; }
-        .header p { font-size: 1.1em; opacity: 0.9; }
-        .container {
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        .card {
-            background: white;
-            border-radius: 12px;
-            padding: 32px;
-            margin-bottom: 24px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-        }
-        .card h2 {
-            font-size: 1.3em;
-            margin-bottom: 16px;
-            color: #0d61f2;
-        }
-        .card a {
-            color: #0d61f2;
-            text-decoration: none;
-        }
-        .card a:hover { text-decoration: underline; }
-        .footer {
-            text-align: center;
-            padding: 32px 20px;
-            color: #888;
-            font-size: 0.9em;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ここメモ - サポート</title>
+<meta name="description" content="ここメモは、気になった場所にピンを立ててメモを残せる地図アプリです。ボードで整理したり、フレンドと共有したりできます。">
+<link rel="icon" href="app-icon.png">
+<style>
+:root{
+  --bg:#F6F4EF; --card:#FFFFFF; --ink:#24222B; --sub:#7F7A72; --accent:#697767;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#17161C; --card:#24222D; --ink:#F2EFE8; --sub:#A6A1B0; --accent:#829180; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif;line-height:1.7}
+.wrap{max-width:720px;margin:0 auto;padding:48px 20px}
+.logo{display:flex;align-items:center;gap:14px}
+.logo h1{margin:0;font-size:34px;font-weight:800;line-height:1.3}
+.tagline{color:var(--sub);font-weight:600;margin-top:4px}
+.mark{flex:none;width:56px;height:56px;border-radius:13px}
+.lang-link{margin-top:14px;font-size:14px}
+.card{background:var(--card);border-radius:22px;padding:24px 28px;margin-top:24px;box-shadow:0 3px 12px rgba(40,30,20,.08)}
+h2{font-size:20px;margin:0 0 10px}
+.section-lang{font-size:24px;margin:56px 0 0}
+ul{padding-left:20px;margin:8px 0}
+li+li{margin-top:6px}
+a{color:var(--accent);font-weight:700;word-break:break-all}
+footer{color:var(--sub);font-size:13px;margin-top:40px;text-align:center}
+</style>
 </head>
 <body>
-    <div class="header">
-        <h1>ここメモ</h1>
-        <p>気になった場所にピンを立ててメモを残せる地図アプリ</p>
+<div class="wrap">
+  <div class="logo">
+    <img class="mark" src="app-icon.png" width="56" height="56" alt="">
+    <div>
+      <h1>ここメモ</h1>
+      <div class="tagline">「ここ」を地図に残そう。</div>
     </div>
-    <div class="container">
-        <div class="card">
-            <h2>サポート</h2>
-            <p>アプリに関するお問い合わせ、不具合の報告、ご要望は下記フォームよりご連絡ください。</p>
-            <p style="margin-top: 12px;"><a href="https://forms.gle/fq5LrsgrtbHRXku96" target="_blank" style="display: inline-block; background: #0d61f2; color: white; padding: 10px 24px; border-radius: 8px; font-weight: bold; text-decoration: none;">お問い合わせフォーム</a></p>
-        </div>
-        <div class="card">
-            <h2>リンク</h2>
-            <ul style="list-style: none; padding: 0;">
-                <li style="margin-bottom: 8px;"><a href="./privacy-policy.html">プライバシーポリシー</a></li>
-                <li><a href="./terms.html">利用規約</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer">
-        &copy; 2025 KokoMemo
-    </div>
+  </div>
+  <div class="lang-link"><a href="#en" lang="en">English</a></div>
+
+  <div class="card">
+    <h2>ここメモ について</h2>
+    <p>ここメモは、気になった場所にピンを立ててメモを残せる地図アプリです。ボードで整理したり、フレンドと共有したりできます。</p>
+    <ul>
+      <li><strong>ピンとメモ</strong> — 地図を長押しするかボタンをタップして、タイトル・メモ・色つきのピンを作れます。住所は自動で取得されます。</li>
+      <li><strong>ボードで整理</strong> — 「旅行」「グルメ」などのボードにカラーとアイコンを付けて、ピンを分類できます。</li>
+      <li><strong>接近通知</strong> — ピンに接近通知を設定すると、その場所の近くに来たときにお知らせします。</li>
+      <li><strong>フレンドと共有</strong> — フレンドコードでつながり、ボードを共有できます。メンバーには編集者・閲覧者の権限を設定できます。</li>
+    </ul>
+    <p>基本機能は無料で使えます。プレミアムプランでは、ボード・ピン・接近通知が無制限になり、ボードメンバーの上限も広がります。</p>
+  </div>
+
+  <div class="card">
+    <h2>サポート</h2>
+    <p>不具合のご報告・ご要望・ご質問は、下記メールアドレスまでお気軽にご連絡ください。</p>
+    <p><a href="mailto:app.info.kn@gmail.com?subject=%E3%81%93%E3%81%93%E3%83%A1%E3%83%A2%20%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">app.info.kn@gmail.com</a></p>
+    <p>よくある質問:</p>
+    <ul>
+      <li><strong>購入を復元するにはどうすればよいですか？</strong> — 「マイページ」タブの「プレミアムにアップグレード」をタップし、表示される画面の下部にある「購入を復元」をタップしてください。同じApple IDでの購入が復元されます。</li>
+      <li><strong>サブスクリプションを解約するには？</strong> — iPhoneの「設定」アプリのサブスクリプション管理から、いつでも解約できます。現在の期間が終わる24時間前までに解約しない限り、自動で更新されます。</li>
+      <li><strong>ゲストモードで作ったボードやピンはどうなりますか？</strong> — 「マイページ」の「Apple/Googleでサインイン」からサインインすると、ゲストのときに作ったボードやピンがアカウントに引き継がれます。フレンドとの共有には、サインインが必要です。</li>
+      <li><strong>ボードを友達と共有するには？</strong> — フレンドコードで友達とつながったあと、ボード設定の「フレンドを招待」からメンバーを追加できます。メンバーは無料プランでは3人まで、プレミアムプランでは20人まで追加できます。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>プライバシー</h2>
+    <ul>
+      <li><a href="privacy-policy.html">プライバシーポリシー</a></li>
+      <li><a href="terms.html">利用規約</a></li>
+    </ul>
+  </div>
+
+  <h2 class="section-lang" id="en" lang="en">English</h2>
+  <div lang="en">
+  <div class="card">
+    <h2>About ここメモ</h2>
+    <p>KokoMemo is a map app for dropping pins and notes on places you want to remember. Organize them into boards and share them with friends.</p>
+    <ul>
+      <li><strong>Pins and notes</strong> — Long-press the map or tap the button to create a pin with a title, memo and color. The address is filled in automatically.</li>
+      <li><strong>Boards</strong> — Sort pins into boards like Travel or Food, each with its own color and icon.</li>
+      <li><strong>Proximity alerts</strong> — Set an alert on a pin and get notified when you&#x27;re nearby.</li>
+      <li><strong>Share with friends</strong> — Connect using friend codes and share boards. Give each member Editor or Viewer access.</li>
+    </ul>
+    <p>Basic features are free. Premium gives you unlimited boards, pins and proximity alerts, plus more members per board.</p>
+  </div>
+
+  <div class="card">
+    <h2>Support</h2>
+    <p>For bug reports, feature requests or questions, please email us at the address below.</p>
+    <p><a href="mailto:app.info.kn@gmail.com?subject=%E3%81%93%E3%81%93%E3%83%A1%E3%83%A2%20inquiry">app.info.kn@gmail.com</a></p>
+    <p>FAQ:</p>
+    <ul>
+      <li><strong>How do I restore my purchase?</strong> — In the My Page tab, tap “Upgrade to Premium”, then tap “Restore Purchases” at the bottom of the screen that opens. Purchases made with the same Apple ID will be restored.</li>
+      <li><strong>How do I cancel my subscription?</strong> — You can cancel anytime from subscription management in your iPhone Settings. Subscriptions renew automatically unless canceled at least 24 hours before the current period ends.</li>
+      <li><strong>What happens to boards and pins I made in Guest Mode?</strong> — Sign in from My Page with “Sign in with Apple/Google”, and the boards and pins you made as a guest move over to your account. You need to sign in to share with friends.</li>
+      <li><strong>How do I share a board with friends?</strong> — Once you&#x27;re connected with a friend by friend code, add them from Board Settings → “Invite Friends”. A board can have up to 3 members on the free plan and up to 20 with Premium.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Privacy</h2>
+    <ul>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms of Service</a></li>
+    </ul>
+  </div>
+  </div>
+
+  <footer>© 2026 Koya Nambo — ここメモ</footer>
+</div>
 </body>
 </html>
